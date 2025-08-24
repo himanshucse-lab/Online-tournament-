@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Dewan Institutes Online Games Tournament</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        :root {
+            --primary: #1f2937;
+            --accent: #fca311;
+            --bg-gradient: linear-gradient(135deg, #1f2937 55%, #ffba08 100%);
+            --card-bg: rgba(27, 32, 48, 0.97);
+            --card-shadow: 0 4px 22px rgba(28,24,40,0.13);
+        }
+        body {
+            margin: 0;
+            background: var(--bg-gradient);
+            color: #fff;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+        .container {
+            max-width: 980px;
+            margin: 36px auto;
+            padding: 2em;
+            background: var(--card-bg);
+            border-radius: 22px;
+            box-shadow: var(--card-shadow);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        .logo-group {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 16px 0 8px 0;
+        }
+        .logo {
+            width: 85px;
+            border-radius: 12px;
+            background: #232332;
+            box-shadow: 0 3px 22px rgba(55,55,77,0.17);
+            padding: 8px;
+            transition: transform 0.2s;
+        }
+        .logo:hover {
+            transform: scale(1.08) rotate(-5deg);
+        }
+        h1 {
+            font-family: 'Orbitron', Arial, sans-serif;
+            font-size: 2.2em;
+            color: var(--accent);
+            margin-bottom: 7px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 0 2px 12px rgba(124, 69, 2, 0.15);
+        }
+        h3 {
+            font-weight: 500;
+            color: var(--accent);
+        }
+        .hero {
+            background: linear-gradient(125deg,#fb6701 40%,#2193b0a7 100%);
+            padding: 28px 12px;
+            border-radius: 16px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 28px;
+        }
+        .games-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+            justify-content: center;
+            margin: 2em 0;
+        }
+        .game-card {
+            background: #2c3244;
+            border-radius: 13px;
+            padding: 17px 13px;
+            min-width: 170px;
+            box-shadow: 0 2px 11px #22222331;
+            flex: 1 1 200px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .game-img {
+            width: 54px;
+            margin-bottom: 8px;
+        }
+        .game-title {
+            font-family: 'Orbitron', Arial, sans-serif;
+            font-size: 1.14em;
+            color: var(--accent);
+            margin-bottom: 6px;
+        }
+        .register-section {
+            background: #181e31;
+            padding: 20px 8px;
+            border-radius: 13px;
+            margin: 2em 0 1.4em 0;
+            text-align: center;
+            box-shadow: var(--card-shadow);
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(120deg, #fca311 50%, #2193b0 100%);
+            color: #fff;
+            padding: 1em 2.2em;
+            font-size: 1.08em;
+            font-family: 'Orbitron', Arial, sans-serif;
+            font-weight: 700;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+            margin: 15px 0 0 0;
+            box-shadow: 0 2px 8px #fca3112b;
+            transition: background .17s, transform .15s;
+        }
+        .btn:hover {
+            background: linear-gradient(120deg, #2193b0 60%, #fd6e01 100%);
+            transform: scale(1.06);
+        }
+        .card-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+            justify-content: center;
+        }
+        .rule-card {
+            flex: 1 1 190px;
+            background: #222135;
+            border-radius: 11px;
+            padding: 0.8em 1em;
+            min-width: 140px;
+            box-shadow: 0 2px 8px rgba(35,35,55,0.06);
+            color: #fff;
+            font-size: 1em;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        .rule-card span {
+            font-size: 1.08em;
+            font-weight: 700;
+            color: #fca311;
+            display: block;
+            margin-bottom: 7px;
+        }
+        footer {
+            margin-top: 2em;
+            text-align: center;
+            font-size: 1em;
+            color: #cccc;
+            padding-bottom: 15px;
+        }
+        @media (max-width: 800px) {
+            .container { padding: 8px;}
+            h1 { font-size: 1.12em;}
+            .games-section { flex-direction: column; gap: 1em;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dewan Institutes Online Games Tournament</h1>
+            <div class="logo-group">
+                <img src="https://wallpapers.com/images/hd/free-fire-garena-logo-png-8kieob7nzlm0mytp.jpg"
+                     alt="Free Fire Logo" class="logo">
+                <img src="https://e1.pxfuel.com/desktop-wallpaper/447/451/desktop-wallpaper-bgmi-logo-bgmi.jpg"
+                     alt="BGMI Logo" class="logo">
+            </div>
+            <h3>Organized by <a href="https://www.instagram.com/dvsgi/" target="_blank"> Dewan Institutes</a> | Developed by <a href="https://www.instagram.com/himanshutyagi0006/" target="_blank" >Himanshu Tyagi</a></h3>
+        </header>
+        <div class="hero">
+            <h2>🎮 Are You Game?</h2>
+            <p>
+                Join the ultimate online gaming tournament featuring <b>Free Fire</b> and <b>BGMI</b>!<br>
+                Battle solo or as a squad. Claim prizes and college glory!
+            </p>
+        </div>
+        <section class="games-section">
+            <div class="game-card">
+                <img src="data:image/webp;base64,UklGRgIrAABXRUJQVlA4IPYqAACwnwCdASovAbQAPp1AmEklo6ImLjn7EMATiWJs08iSEpt/CbT1CHh76uC9GvyD4nAn+I8ul67/seunzC/HU9jHmq83DzlvRQ/xnXKehX0xH9q/6eQvy2mwOwL7T82fYVzN9n+pN3f5C+C/zo1CPa/+/9PeLA4O98vuXnbfb+cP2j9gHzN/4vha/kf+P7AP6z9Gz679Bn1v7Bfl2+xD92f/t7rf7Zf/9CelXC9NR+IaQw7GcChDwoyw5pG4p1cH51o6g3lw+sd2LmpEGqDr+5mbBBDEtT546e+hz5024Pj5hRgzVnm9jvRyTOuzBq7Pod0/J7q/J/sPiNoXc6Je901FbjkFXpQU75hsVdkccYGYyy/ikqO4X0tVqBVL8fiV7rtGetz6vTd+QlImDdye9ThW6B2v4rxk3xg5RsBRkrWQANYnXAMFMpfm08NzP10Cgqk43D7NZYI0CkcOF8MS8hGdvM01h0cALA1zvTEf0m/jo6tXYHmM17gKKpe6LfE1q8VnZ+rAV585FgOWfGEtZx/KnGEn2cUlpPNCOUpBfuwj/0+d1aejrJu3GJaWXuipq65Vv8jE+jvyhwhAZEEAP+bRcT2yCKZ5SxuVI7hBXlxChL2lcgjUIHztOlZ/k3S3TK1si0lolBmuyLIWWpH7xxBDeG4CXMfs2xXWaTe6MTR5a8Tr8toAjTyvyT1m2DuwVWsUtESirhqqNKE3JYm/O94gH3tzLtVcFK7A+3nWNJioLh/N2F0U9MO+5+fnkvieFNccrxkEEP/wp3Lt5bb2kuApmM8IvA9y/x/PWMz7Ub8x9u6MhHKGOgPmIPBjmoxUFHdJKaBqmzi+OOfcKgpDMor2LE7OLIGduel++KnGiPYEdfGS/qvC/u/sbQ+OEbcSR9XhwZMj173Fqp8IAUOz7o+Ti3wMLdd5/T6/4mOLLfhhpy+Rk1s0H9Y1BAxBpRXFkw52JcJ30qcqi2HxtHG+zccZaA7iU5LCk1QdEKC/CPAjxc7Xmj1gua6l65s2yJTDyFQr4Bv6T3tQAovcXXYWb4xQxDxw/RYCAre07UxmjdQ69aj4hC7xAxHio6nKLededsB6qeZ1znYPLPBfYdZ4G5f54QfSR2tHBQoTwlSDbf+SKn13fZEAourWLlro7sSN4QFCJEaKbVMhDHEWFnA23iA31m8QaabBHDJC/sXpAVhA9tQXaO8XVM6hLX9orS5Ipnm7/E3c42qH2MtwqQwEjZlK92L9RnUytMsW96a4hSyeDmBORjY5p2GFhq/YQUkEafqEnKpmSqskRFcVo/99/LvVnEyxulcXiQ4wd1futf6vLk2Ab7jglNIucyyitYxV+7Nz05N2Y8yqe0R5lGrg4jQLe0PNhCktNu1PZ+bEVLTY+AadcwUlLq8+M+qIp/7iE5onQSSwL/qkh3vG2oh1Lw2iUmHYruDGQUEvw4E/nPeFNLnxKIkXN6utLVq0ct35e2k5xfKuaB+6dnpHPaXYtPBpN185B73x9NubeBlHBF5XuYzPorQdpzcGG8dMEehXsuoaDErfE4XvkGDfvNSoO8Ngp6lWIx0QEyDbhs+1IJNF7zPipmILyKsj5vraFIJgZWZ57TxS8pwZtyYIfn6xwenatq1FHKfwx+KgbNz6bdocyaxhLBaGDXVQtaVxi7cEWe8e9FI378qR67lG2qU8yduJgYUw7CS/o6ZK0RILbovzAwilmhMs4AD+8g87RrdNgHvzz1HqC1NhUC6PD3QSyn4DNqQH/lvevPv7HS/YKr6pO+ATVl/rzHRe8G4UY7/kQIHcXSyEKCyAw2sKB59ZABgw7JP3A7sRbyDZ9sqtV82aY6wW27NZ2cWc6PbIaihC84BBw8MQXHqSkJn60NrbWj9QFtpS3V7em0s3Y82rR+6yfIXtKYApgHXvbNoAoTFdRrOvrLPPe30D8tq1M9yhUiEtQ/eELrF97Mn9ch3/uvGsjiLMvpyK5dQYKDcU/hEh6hSTG3gTvKSbK8LsJl3vyed21pQXeFg+oDqiDzB14IvTbu6XcCR7yCxcYKWhEUi8QM6vGLDISlSvGOO5RVNGnTpmdNdq5xWIabkp/PNVXT998Vuz0BsAn7IPBZtXPUFWSlkGIJ4h7bQ+alub2Q/+ri5iycfBsbTmoD7XWBSbr56XqAyObYE63HA0NRUMls2WWcGn6TftlzxgWTPL0DWnQMdheZGeXXTSF1+rEMg0pjyNR4fTeJfkySD7myzhOjMSSQLjMMtq/1bzROoFZDZmQarKavvl/u+oN4UsuVpxy5n/I23C4Dcz2IViCN2wwr/wQEWgvfdGvSDMxe9Rt3HDf/b850ua2y4RXNJj2LfFYPsg9PKZML3AJLCGjIm5uRn+ByHTLJtgKGIlOEQBquGciGPdkJasbHq4wIIkCwS2MPKqaf6oM7QUKGH5X3xrQXHj4UojnR8cruDpUaqPbUU8d0Q3XN/Z+uu+viTE8a6Xvv8BpKxQ/PICLEYGmcS91g87zs9EXeqeaAeWSDMCXQDQnktp+B+qnN/Nb6D/bqHUvfK/e8ls2NXyLDyIl9WsGE36HRwtgyZsmqbgxulLnDHoKRXo1sjcifPT49YmVXeHkOt3YuV46gg1dzyNGEWTmCnBpM/7N5Posmi6Ev37eVce3TmOAM/qDDyuLyn35EiH+Q+JEWhrQhfP5wSSrUIcX9FAWHu4pVp4vKWFIrjYs8e9F+/YAeagMMSEO7muAGaiHfAjIS5UQnrTyNWji48ihkVlZoeZ/LbFkCVl363uQYSZnPnh0I3z1Ep/98rj0Z0rQBj2YpuPoiJ9cUFlqllkY6Kywwr0mUGkJpi7E27cvNtZC0rGSKc/UKTjqQBCAFiRuE4SILeJkUGs6XWoQX5CIvZ7GjrdY2dJBP+tGGlg6RzXzDvS0vdxH94ltgufb6iyFMI+d62aea9Gw02qb8UykNcjz3497f5RDt7TkyRyfRQGu0f33eOtqUjhojF+Wt95hdIo8BgHbjSVVfliv2WVthZ4/6EbJeDSQjLw7EHcbYBbvy9FjTPbua6cVYPtOKWpFLhlik5blwU6uci0K7ye26RfUerjt8IcyYPWj/h4fbINpPDkBrNKuGMn1JThXxC+8aIUy8bJjaXvkFjv5+JSuQM3vH05QobdFJggPWizXbJOcT56jjaXjnTKFYcbBPeoSj6ZsRR5aep4o/OeIB4HvPF25/b2LSgoY8PwpTGglrY2AJFTrfBrV10R1957ZyZK53nHTRMq2vcI8fy+/rJJOxv/4WaHcgsBn7OJ75ZRRbztqBARjkaTQcAI34/oo5KQ883u4oZnEYNw1bF+iNQa6IGAm4mLX7ldUMfnV9xSvAbocWFRkostHnsO0OOf74ylfO2pQkAdziQFLBq+gEaj5495MD7MPjWEF4G7aARwb4Sck+aFNHne81k9ZsFbufBlIXgTwzzEdVGDTo0Yket231Xh+1rGKvnnXRER4KyaP1KCPfkWCvyBLBNJtxVKoQPR8ukv8NEQyg8b43DeC53jm/YXvFQ814/k7QpUhhz84hikdEDkSg0TD36y4wvNZ2DvCjzVz9uoZWtdG4F251MDTeTOQGwsKNKbyXZ0+daD2brS1o7xBXpjujj+v87PnvL0oVqZ3sk0RBiJ53CNwxNzxHanPdUEb5rzxR91yifpSoPlIBZlfEf3pLQCoKn4WZ0r03SYPyUVArJQY7aF0WHdeD2eheV+dpf00yppVncryLjGq2pPHKDn11408qJQnX0laRfvx0tz7CmpBzHoYMfEmK6Xh+PH+kASGp95XyIZs7UJwqj5B2uqQvZDklh63RVEEG2zc4cSIZT3+EXjfkREb5Uc1/TH2kYjtHHHRqjIVxQuaSFaTsa460jS2N1k7Ffc5kLwGbW5vgaMQR1Dp0GdsxWlvO5FnYHMSUttHzxiVJ0f+t+whRjwOpn6k00mBUyDl/kuPRDLV/PvaSO9XlqGqpjnE0FGChc532svx0MN4/34a484NhYmez6qYzj0+jx1pIQdYYp1RaZnDPT/WFSMoDyTo8O+ZmRvJ8yrdQvivl7VcWAiNEthkGSmlEzWEqJTNC6gC2ztTJnmKeNHoD9saFiyn9fC/n/y00gXHW475ADqoG+4tdrcs0rXwvOh+9/DwEHzFfETRCZq6lNZ813rwfB6XFHLImeKtqwa1+41YSy0MLuinKLH7bnBv8yfLKk3G4q1N/lHkwwqo/Wzv+bNsZ9+JgVfZ+pJBWcdT1FNuSJubc7vrm6l7OXzePfjKP44mOorImGnToAPOi6Y1pUU1aLgXILJevLsyj/zrVoBibjgCTDCjYraxw6X8jes58K1SUP3ItvHW/F0zFKqFiaVQjZ1WdXxJ0gfQ3Y4qzUzchPCe/8OQ4DMJ3/J1sRy2OCzvpkb0LsI+1H+Xb/0rEUQe28cvZWw4LtjGNiKk+AQsUqfBn5LFmLXHCCOmnFMCXDb9jHviq1i0nKPP3lgxg190EFJ2VrEFqZwMphOh9i6wXoFQLlIsM8n+vL/9yI2IfUpDtQvpJoy9TUfyMLs5P59gNqNgQZauzSa2iGjGtlFvn5fU1axbaW2+U7YhzNUcUXlv92Dh7rQPt2PcBbMbJ5lur6zVHd7/BwTsdOaHCeqwCNOGkMTgYDK7CQTcc6z+xCVq8BEeZCQxzFWHroePSL+jSkZfJgQzErx0FtoPBFImT1bO1LSf38FOSf/IFYyQEMb5IRzVqbuob7vFHT2ZehcUkqTDUxgDg8b/+OvAFZKKRw1jx99gEaskG974BPPesvObpajIDK1/grMJj0FbfawXcEcFjiqIb7kaNcHhW1Yz0CvlXszIXziZwif1cyESmiFPCltLTylREkvfWcDQ7k7NTIbhr2peBSMMwA6RSAmDkXjMEG9Nhajw4PEdLpXVjvFDc99J4DbrcL9842f0H7N7IXiH+gEYchpH1lsCnAMd4SF5Snkr+H9i9CPCXt57doalacDcv4FrzVC+fWXKSw3U7gdXT7vx1BryOLJTma+kXcdx64JC3O1agpJcokeNNJaeQ4QF7gxSjkM5rXDts6H/14T/G1Z6zztWjixoGo4ZexzHSBgVTlNem+MyHUs1Yi+vFXRKcSb/zOjcWTK8Sr1qknlTY/kvkHu7IahR3Hxs9Ui9K6397vTQBmQ4wCEcF6iK7yG8aqGB74S6DUjKYdz+1gN3sTk8BIrtrTky+0LFhCyx9Ss2AtHRuLNaGLt2hQTKEs/psoPjkMgdR7fP8LSQiUImutk1TpjpRAOze1VGtD5rj1dLAuBcEjpVF9jKqd6oEXugvL83M3M8kt0Z2oLo5va4+sS/ikUqq6IrBawA2htYSdn8JtJzuLGU7/XT4+uFmwVLQkmNChfgl1vnf9Hz2OqutmN9aJZGzSU6Z8zeuKwLK0HvbzM3jvsPIQ85cpKLHBycoBFRW4RYS1CI6UR4YeYkBoT6u9mVF2GPty9BN4OSXkYCHTvH9EAZgmTCHzkXXUTLCDD8NBq5NmMkFpmSBKop7JmPZ/QK7APJS41BC5dPxjCdmDLW6jW1dA6wP4WeU6q4jw4EyqG/927A3HpFCv8gtI9mJz5J7lqiEe3KN2MjTejssLbgW2pe2XMQ/2haeMmUPvEqyFShYndEjKX6gFHMn+kcrJYu0wno21S8tbmmhoAOJkJ0Mg2Ubntgc6Ila5Lfr/PGdnznWLdEZ3Fwq9f7/z3d5bGtGAttTVhKKfkTSeeAOFMzlZzo5XM1Zzl8ZoqdrRMSNeemGia425Zhuil6Wgo7xh7Rk52dnYyJarP9rO8J+kMxmnlyBNhpMe6whbLxEzlxYvkw+fbDNyJZyzz24nA+XCjUiPhUqMJgKsx7zAZndDhJ/c75bK+4aO7KRtbYHYhj8mADhjnZie8o2c2pC6ngxvEDaoWdJrbF3syLoGH5EgJaBmag7yz5UBO0ACdLMmEJ7qwGZoKcUEvRZsbWzU9LiN5ygeKUlLS8NV4o1jrb9Wf2JgSY7uFv0zRz0m9iAn75YaA+EDhXG9T67Eb/31gADsM3QrsBL+wS7R1FJJidfAqDHRLL+ZfiZ0YfK0Pw5IZQVrZHyONzlWkIAtHMXBCHrC1bWjKhWpxaCNcBRoshKgfn2rHW8UZY8JWts4A4e9fLnt9F33m0CtTEEbtkPIhsY/IPa+xsYalabvhq14Lcrj+bt/j7BkxOhcA9TKDQHIWBnCb2bhivC9ea3m/7cXHaLgKQqkKFYbZ1fGv//KtH9XSNRzbb/fpO7N4/Wtu25vEYOYFdQ9aKmGEeA7q/ClsE5GOMw/BrsJVr6K9ujTlSmA43s5ni+nNjIAYIZUl6yZfQB7MaCxi0Q/j/TOtOwrdUgyN5Ovhh4dxk+QkXj9CXQcpVpa+zGreExutREknGAhFAfNyXCtYOS6iIk84bofVNiAGIH/JIrc00POXceYGK5StaT8b14OeTpVdC1Vbn9DkFBBsBNqRuGw54tUKE5DSOVwK+lGtmioy44MC051oLhYtFdSr/Bbxkd/q6I4wyPNPpCLlfGQYR26Mysdkdoz2SntX0FYFXoO2UvFkYjE+05SWiBGpntfgx68/wgjLvyNxAPR/fFaRA8qny17Efx7gePUhY2aAjZ2xojMFEtwoinDqNJNWDJc+0jSzqxmLYz/OyqwexNyg3+H6cp+eN6iFF4hzXh+fgK1UMSeA69DwH7vWn17awpDoW+aSdLADAJhi1atG1ORCNpJaCVc9bdhgb9BOEaNMTSPsWC07dkC/mE8WkIOEktFKQngyaENu5FF4gRNmCn8fGahUPPesOH9enJIPrDubCirCFfH42aRyPrNMxm3LgcefuPcJkOtXQ8LiVbD+9mZdVZa4lxI475t32ZH3JaBU4Vmb6j8UXIJeui2DDlvYuTsw+hj/iiLUEl7uAu6S7brODJt3I2rsojm2J/50nDLC59punRk3wVFwxVqbqm2ahvIrUfgHKG8qvjk8FjzyiQgrps5cVWzGWdvYLuiBfuE7Zlba0u2XYMuDfmPutnS88IlqvmkYz7FO7cFwMxgL2Xf4FxgMM3Y4SdjyYf1Q+mgNWM24KBRTI37ThXp3HtuwXfwP1y1XG//db4nECNDUFVzdkiY+aXy7jGthO75yk7KSAdJFlF5QhkysSthdSzonv1lTHZ69f43kNWuTWSoY8Y9fW6kRYnwtI2eKH6Lhyp/OiHwCWMf2BRkeCd7bqTfS5ArCLW+XQuY3lEM0RB331WewpAyuVMfC1Zg2d3OIqpnrBulDszsRm3BWGDHHvoBSLdC1eHm2K2rdi1tVjIVMzSYRCFGX6tgieivlUpoMY98YT0H8+HDCEJ3iIxBgrDQNA9QMYRjWo42XpB7WHRAZwQ5cBBwgvl/feW1B05s3WCC7B3+R6YLHI7MSD9QP/WonS54ZiP7YC08K4fdXf9N3vlyJfEED7lVlOIkpjGaK+mFDPeq2FbJxG0CdyQxrOtMBlSY4Uttd+PRo1kB0TTPj8BtWnuSvdwCUbGmp1AqkI56XOiMBFTlMBlCB6Cbg9S2Re0+u6GcH9wlLXKAO8/cP5NXz7pQ4H8TVnPqOJ0Zll/XlZ0GRPSS5MX1Z9XFb6dtEIzM+vDr2S9n8J/DHBFReaFTMMekKa8sr+LOgFVH1+XD8GHjtH82u9dqMdojNraBIK6YyUzyF7txntpINg0LnSow2ONZg5pz9xUxq56JEOojZSSjEU+mlgwTRw2raYqGauDmPmDC9wXbJHn7Skj9Zl7aouEbGJEg4mc0sKZc9EZumvRlkDFIwNx9EpqatDhdkrqlnpPviQg4/mmzD6EFtFb8eRrWELMoxGwslCxo1IPwBikDimttfBfSOM7jNBPN4b/68V4IqivlKX1Y0w6IvfBB6Shjm3TN+ky3luMNP7IintvAusMDTMkaZ8e8IqlsyS3PrTkWvoIQvPUB23Cs9YQhPNXHKkPsH2ADqChWtXsQlzzNcjJ2N99/NehEFiqQbbZ7jV+4ClG/NLr0c4sB0uhZciYx5Y8ID9PfJMW9dtr3u4o8zwAA+3ZqjO8kNPgPvj+Rd8hUSKmFzJKRfzmw45fL1vvLkYai0hA2mkJZIIuPzqW7zjrWbnsbkIEX+vlwLePjtV2qFDnFzOzLY+JACNI1KicS2VskGZqkKB/PDrK1+zvKK8zKSzb3C8gxXDF03QAp8DvKk1qWpjGPgUwDSj8MDku3lf5iDlavOFU+THv6mj5146K6KGWZWeV5MS+gnRt8ckYXa/xhM5ZlKs563TIPAKM4rG0v6HY8OfpNt4PL7uNvEQ/bxt7NlvLZp0OxBuuMFqxc0Kfu5irR7fHvyP8y+9YFOlrpiwPeuyjmkf5OYBdG1PevVk0GybYPML535vHfjdNG5tYJyzVj5YON3NEclyQsw74dxm23QRePEaVnZNuZAyPmAOgoGMO7R43+sMs4tjW2lHjJDQXdQd5Cb9quuWWdtA/06N/vD3wdSmD7vfbriQavpkK9Q9MXWjEKHokbcJ1M+O2Kyl9YDTR990xew2D/mJZySTjWok4/7ct4lZStQYUBw4BGrrY0vD1t9r2pFZ7tHCDk6Kw3yWdoPMZgSiym61lVah1qoGrfoYGy+6CSEjb490cuzAePSXv3y+jO5DWFG4m2z797kKas5soQ8v0C8A0BHQTxkhJsD+u75w7JR7tEJQfdra89bHclV9NtdBhYWGRlgOMCMv9EsHtdwaLTKHo9EtpQkHIVUdVJBXNx/dmuFToAnWzpOrV+B8RVS5UpSNV8jM13G8gVTxaBv3K2/53y59Wscw2/duLz3ytF6MlVm6pYbz+z64YONpiY4a8SdYZDTDfiRuf+cd93FxYn5U98twoLfZHsj8idiQ2uoIrGmf61aTngf+kpYDf42Qn2i7lNMWGl+9H1Bh8QZflS+OUEQ0iC82FdElEh5xw7za+IBdYY8iNLYch5eCaoHmOdoAAREKgNhA4aYIlJYZf9gowkqLcpEofGyTeGiihEVViQonuV2e1k0PnRi1fu3nW4GreP7F0lHBjDMlpMhMAuhCZ4gYo+RyK+156NneMzR+TKzOux4X+wUX1Oc5zx59jEC0QfIHd1lYKf4gDjH8m89xqiqvXk9sm+FA5svJuupoRSXs3wD7psLja9qGDzEZk28O6LKqctgKPrBd8tf24SXCUNTL1yyMCh5c5ssm4odQYKQBCCW8OIT5lcND3/8gCuVw++3vP18AZKZ6TAwezKX1eocyDPTdf3Ff6B0tnh4t9nIH9tFxWJhNxDrT8NQfBXid6LGsY+Tbwd05vdmv7Ub3Y+IUTLPD4EAYa21yZOp+LBsB5h60TS/qxu0aLQ2fHNsLIiqZHtBjj5Ocyd5uGuiVuUNx0F3kzYOWgqxjEftb5j26XkfCY3Z5PvKTZCDppXrxA1y1goSU0ujxI7a0SbyE8KCRUFultUYVwVCbpp8wtzxY3pVM2X4B7k14ltJ5d+2XUgTczpBFxRLWvH71Drsq3ZJMqH3uwGMv1qWbx4tKd70jvOwK07zm4WpUu9yPkR0SE8jsu6z+O1/WcdlGWaabjgyTj687Cjr9nsqjE7WjavCncw61lb3bpWBYG+3IkcGZGcrj3oflRRtL8viLBIb7VIPYJFNDR4IYwGGzMaNzhvIDwmxj8UkXyHKR3P94lpWCuWWHfWwTilhVi+n3fggbsPr0hcn0gHFj30F3L+pD62NIO0FkzdLsmmkHRTUvLj/UB+amX7AlViySlM5V998M2tiEJ40YN5yUhRNAs1yTX5GDat5H2BR7zeNr0PdRu+AXRoHXeAsBRZ3OaGR9ahVX6+Zwtim3hUIymp3Vrt6OelLHNQOF1PK8tYF58ViJsUjgGgA7XCXbGwQzJ2cGHu+d3o6quh1/C7UJnuYGUHyBhGEQrNSHgfSzztIk4tw0gdPTSRDSz0iYlOJr8b8mpHPcx7EQ9/6spbFIyQUwctbzRdi/c3b+V4UsxpG69SfoRqfieoZKY9ThXOn7Osxoj6NYAwF1fPOFy6vYBXGSKQ37Amw/Qi2Uq19b4bpd5eh0N+5tXRJPNdl5S+L1pBFXyeCfb2jB0IqALkFbazIrA1yvn5rQW9R38lRC/3D44mmpi1w7wQ8PbPAXc1uVfJqewaLWyZc9s9sw2L2WvwO/dom9+UMeTCFBubo43u4rfXjtQ6X3+HcCPeryh/dXp7AneiplBR8U7l+og6ui103QC9nrRnGilxzkdPDl/N3+Krh/V8+gb8To2BArjt0koCNN7MW6oQpo3JyXvJVKHuQP7d8nVUAyuR05mBntNjyGpS07oPCY+HmrrTjDUeCT3oyRKInwEWdA9zk5tso63xdvXKZjDzRWw/8+kvhWkXi4wdmGrRgaLS4L+d1cQaoHhJFANxZVCKxKC8+JMs/ZlBKjp4n99j7qHUh4zKV9QgU7mAiX6wDuewbf25++/F2fD8T/62OGuyMG5SI5R6IaVya9XLP9mGFkUxL+tHDLTarQcujz2ObuQcbnkeDSZnBFycDqIZK/PwR6cuSfoOY0soi+Ll3oGG3nq7r41AVQB578V66Y4JYJCR1mLjC8Qxr29CVKS627ZSGUt8unvgm19Yr/wXcL9ptJFQC5aeNwJ6FYSE0MkCEPhB0GlniaB7BKrZ/UhRyPEDAAEOb/PsAOOJxrpKUeyULMKgCjyaNUQyc0Lr6oPpkLJyS5MXQOj+93J+DJXb5Vn4MwsfvYre6bNqxIL/p7QS1/pt2vrzgpn1nPVzVMn38lMI0K2TQiysxMXuefLrsn19BJjHg1PokGHKgbdPtl+1F4MSNbJY2Jo8jEUODwXtINNOCO0LHtmtpL7auO30iRUFUjrSq6fMsZIA5xIQZfmDlzWRBF5GujyeVpJpgeOIyJwC6seHR/q2pPcRdkRn9uroDmjDFeYVFZyWuVOslq8QCJ4QnYKjDTiaDTx+WADh8OA/UHPIUyS9+oIuitr8TeJz7nSHWCdoqlCCh2h6Chg0ipztKf0smUb4AUe1BOBHVv3UpB70odAnewgMPPPizwgyu6nh7OeVQRygJLB6CMWrJSTgBezfuels1oDWNVYiHCWHMW/ZUQNd6tvdy0Hv4xB1edWRaMJN2jX8fIvqoRnKibkDZDEPSU5JgNQzhRyLVsGJxzS7elwxTX4G5mc7ye2pqX8HKfe6KKes4rY2s91tD1NCSAm5gEUsQ7sPbLp0bMU1Oqm/oraDM+OYdN629cktUsZhnnifKSVCAJrYcPQd6gvxrcMWlnTx9ZmzVbGK3SKu+boEMO/s1zO9ZabD3GlIDbu9yM2xv9jOnNn6ORH5EKZva5u1zvoLpg9ZpLv05rWqJYq3T3h1IcvzHkKS6xMLRSF+Vt801Ke31/3epecg+hzvNCLh/mGoRjRQr62mB+kgrKIFNYuUlukbVgnd5n3A4Q+V7bbfW33Akg7giIFsNmNYuu+DQSa4DqrgKi0ALU/QrPPU7LJJHfGc/8/mEMwLdRQy2EvUUbQA+3TqJcLFKAjYw9NCy9LT1h9eGV6qp6TlyAxWL7h6yun20xNGVBNGAnANz4JrIBn5Me9YqQwiB7lEKwAP3JTXG8fLmg6vZM6I0WnUK7V4cAnB5ernWJZQSsbdasJIl3GZdPr/vlyAturuzGjUuCyD4LwjXerV4ynW0XVY2mb1k+AiCpPCpMGSUFbGpq8yGQEOXMTyeGIj8HwhgV72Ti3RUUTJt/HmmtpuBtyePxjUEFdSlOPfxtKz4P2M69VH7srLt/qoysBH4j2upa07hSrIsguA+qFCr/i34ROBoxRwlAoex9VdxADIHy9mHJLgjjp8KOehUJQLGu3kLVvSysnFG8+XaajBPxa08GNZHgXypL3cRyMerNYUC1mFWb0ANhMQ2hFgWs1aNzANI7kQjjUz3OLqzZe2ThRlVMp34cDGqm0CsZ2+JL5lhrhbifkxS2RumacbKuzvTab0+1Wm0duFjOsCp4iFffdf7zXKeBIH33g/2trgbu+ND4OdSc9zcw9gVus8IH6KvqO1KAUpKCSf7Dt3TKtmx4xARw11ZZAiKuLsTTkxG04AI5nUbgT/f3lcuukEvk5Uyq+FRdYG0gUwAlTSOc31jFUhY1+oW+czZ/+YSf+LI3/YU/HECyvL54IWKrl86G1x5H/7Cevro3DaMeFOieFOKEa7cB5yGgRQ2ngYJpJWYqclvEt0zjI134ih1bnHoe+w3WvgyOJ6CCGml7IiYNQCJN4e1tmochujGLpzmx/hrzwOTxsYMx0DNxyNLSrnTUZDvQuAVwBUHvy5MCQ0c6EF4ToIPkYWoFeP+4tmI53wnE4FAJSTzhexeovAiophCQyRYu5MfoDHrxl81DZziSiaaWkv53FZP/Rd+KB157eExUvA4tqSe29Xwm1TcS6kuiEfpXU13rKJWSPdoZLwnW3BA7BjPsCovwYibGb2GejSgyZflP+YasTaLjmZ/wGyuEZjtqVIpgX4djHYLC8xoYC/GPaJ0V/PpbweoAoqlfzLout+aH+s8vlkM+rLHZwdWcUY9XRqTdQ99xntL6wahw3ycwkzLHU63wKpldQbfat6qXevgwpC7+t932qp6cvL+xiSiN9jorWSHVvPcmHPUKjG62nGmwpHJA7i89ERLI6ZaIytf5KN83Dy/OrMqI/xETlF8TnovtkJt94n/C8KeirHg1mwzsSSc98hku2pBbIyWALjBpRDjXJSTNIE84JAKaWBKJAObXiSDaYN9OYHxAf23Wmk0AsyqQ432ZVC6JZCup3WphjXLpGfo0W9rnDKabQTXwJdsFVT+SgG47EEnUANA/cOeVr6u8oYT6XWzYTl96aLGDPac/OlhGfjIumU9555dKm6ziyg4nL+VzhrOwCyr343/QnOAdxrfk87fwDOeExhfH9CRsIJLSJRoUnLeyx7IbCsX0+zneSNCiZpalYmllQuoRVGZobmEnyBDSGB7+Nsyiey13tJLyNC8p8b3j0lmgrxWmdQ9HclmDKfCE++ph+S5l03oTX5Ko5M8Ntwdam1UYfcN2TMZ2QW6gcrZJcaBnRl+MwqjgYs5DReAqcTVWdXcY8EvmOKnVojnn/8z5N9W/whKhmZQnzp5YYJYlcysNfGCVNNep6cCPvbiGrwAaNLwfeX1Sw/8DnrUU4YU4dxAf5oqOLsQiEeboAUhXYEOHczYQaUFM0t4r/l+sTUOXZ9MZN9uAeuNyVMfQeip0xNUT9MFAV//hvRF0947fZxGsYVEQk9wjNOronTD/Af4zCHmyol44KWo0zwTDbtm8yUdKigsUCPosoAp0WShMd/zDhTU3ds6X6Yx+/MW7GGpkl00D0W9feuvAKwxdUbEQLmiwR+EvYkG61sCEAyf2Cit161lbeTY3xZUkt//lP/lBA7ZEWrFbXtmVaSBvVX397s8+1zZSv3JPd7aTYS+ztXu+SueryQkpza5dPg7XbadxQmjJjBJRKfnB0gA/NRT426okweClzpKXxBCkLVSNaUuOZtUhV9P+TwcwdDYb0JB3nHwXxDIubF7kmGGGux3SnMNgy+MrtZ/zv6MflC4sMbd3AruYquVC1/ofHgxKc11MyM/JeNrTC/S0q3fWDSy7X90qxE7cfv7z/SIb9Je7yYdNkht1nh6bmHLWHdiWtenMHQp5peqeexOkR1czYiYZVVj7i95EyCbkj4bVBT95wzVdKk10IeHUt6OQqhtJt27V8dMmr7cvm2xplX9g8XvIjrhAMu3esh4C1lyAc5vD+oECbAtqC3HkZ0+0bygP5YwM4x+3E9DTY29MVM9EiBN1dfI8DGMcNNBtzWIn8NHU8AeodgizcZcqWUkajRZ/ql8faoYr+8t43/NEX/jAbl25WQPvwNMYWlSt+RA5Gs+q2Q0KrPEF0tO71uMCUiqJktI/5ZCH13ViMfuOSWfzHN7N7TRRYJb6wjwVvkelrJQGjFE5JfY20JXC/BiyVrxc8Zi73cuPiH/t/RF3td1Ys2gOgvlRVFFujAbX0uKRCYlhV4ANL4Wzan5ngu2DMIMY53YzVUmHK5RzDiJbmi1eke9tYxheZ0AtoYlcVwovLVd77ihHoSnHkdBpuG0UZCsAhcX3WRQtDBB020P4oaAOrElLsTTx3Txsp5mmC5CfBJOy/yuqEPa5TewtJcxS/iqW28nDxQkDSxfQ2892WBXLj88hI2QJMuzuZ0jHvoFfJmSl7Oiu5pPgW/NvJs4dnsv31ECpfpAHT78ZHkz0bAH/Op0EbVS85TAXJMMlROElSMiJahIEQYNn8vP79Ch7Dl1Ie+raCUca0ZBMGkJ/5duGYvsSZKs2AtINLItrwp9+ELZZLXS37WcYCToqbfAh/kI9/I7ar05XskckjNP/Ks3asuv4tiwDzpi+3dPvOo4W4XRIK4Wj3w+B5lG7A15Y7yrNvYXsFcfpjcstjuXiYlCJxBhEhcCq1cyEk5rwmxeABC8D0vYe5CWJEEirNZd3GBcoHHNYEqvCJ1Db344GnSVhYkC05vnd195ymf4aUYQioUh4/TWryLB8ChGajFzWiLKes/U/vV8CcXZVxYBnMRzKtD4Y+HIlM0MBoZ1ok2zPApQAJPvGCVDZeOfWRSpw53lwUAjfMCgf+p8Ci6vHPKtHCItJR5cfbhcZYCDgYge5MKczOZ1pRYxvlI+VXd0gPmlFK/gQi2eVnDG7IwriP4c03lBr9ESIjdksDXIAAA="
+                     alt="Free Fire" class="game-img">
+                <div class="game-title">Free Fire</div>
+                <div>Fast-paced mobile battle royale.<br>Squad up and survive!</div>
+            </div>
+            <div class="game-card">
+                <img src="https://wallpapers.com/images/hd/bgmi-game-poster-53iv6fl796p3l763.jpg"
+                     alt="BGMI" class="game-img">
+                <div class="game-title">BGMI</div>
+                <div>India’s favorite battle royale.<br>Tactical, intense, legendary!</div>
+            </div>
+        </section>
+        <section class="register-section">
+            <h2>Register Now</h2>
+            <p>Participation is <b>free</b>. Spots are limited!<br>
+               Fill out the official Google Form to register.<br>
+               <b>Required:</b> Name, Year, Email (for verification), Branch, and Game Choice.
+            </p>
+            <!-- Set your actual Google Form registration link below -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScVDse5BQuCvCbZ1CgKFpSKyhQV3zcWfNzfKRezylNkHiHEFA/viewform?usp=sharing&ouid=104981344781214963254" target="_blank" class="btn">Register via Google Form</a>
+            <!-- Example: <a href="YOUR_REAL_GOOGLE_FORM_LINK" target="_blank" class="btn">Register</a> -->
+        </section>
+        <section>
+            <h2 style="text-align:center; color:#fca311; font-family:'Orbitron', Arial, sans-serif; margin-bottom:12px;">
+                Tournament Rules
+            </h2>
+            <div class="card-group">
+                <div class="rule-card">
+                    <span>🎮</span> Only Dewan Institutes students can participate.
+                </div>
+                <div class="rule-card">
+                    <span>👥</span> Solo and squad entries allowed.
+                </div>
+                <div class="rule-card">
+                    <span>🛡️</span> No cheating or hacking. Fair play is mandatory.
+                </div>
+                <div class="rule-card">
+                    <span>📅</span> Follow organizers’ instructions and match schedules.
+                </div>
+                <div class="rule-card">
+                    <span>🏆</span> Winners receive exciting prizes and certificates.
+                </div>
+                  <div class="rule-card">
+                    <span>📢</span> free fire Mentor Abhinav Garg
+                </div>
+            </div>
+        </section>
+        <footer>
+            © 2025 <a href="https://www.instagram.com/dvsgi/" target="_blank"> Dewan Institutes</a>| Website by  <a href="https://www.instagram.com/himanshutyagi0006/" target="_blank" >Himanshu Tyagi</a> | Game logos © Garena & Krafton India
+        </footer>
+    </div>
+</body>
+</html>
